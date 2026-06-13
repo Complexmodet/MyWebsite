@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Aiden ❤ Luna</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-snap-type:y mandatory;
+overflow-y:scroll;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+.page{
+height:100vh;
+width:100%;
+position:relative;
+scroll-snap-align:start;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.page img,
+.page video{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(255,255,252,.45);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+h1{
+font-size:4rem;
+}
+
+h2{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+p{
+max-width:700px;
+line-height:1.8;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+padding:25px;
+border:1px solid rgba(255,255,255,.2);
+border-radius:20px;
+}
+
+audio{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+width:300px;
+z-index:100;
+}
+
+.quote{
+font-size:2rem;
+font-style:italic;
+}
+
+.arrow{
+position:absolute;
+bottom:15px;
+font-size:2rem;
+animation:updown 1.5s infinite;
+}
+
+@keyframes updown{
+50%{transform:translateY(-10px);}
+}
+
+@media(max-width:768px){
+h1{font-size:2.5rem;}
+h2{font-size:1.8rem;}
+.quote{font-size:1.3rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg">
+<div class="overlay">
+<h1>Aiden ❤ Luna</h1>
+<p>A story written by destiny.</p>
+<div class="arrow">⬇</div>
+</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/984917/pexels-photo-984917.jpeg">
+<div class="overlay">
+<div class="card">
+<h2>The First Meeting</h2>
+<p>
+Aiden met Luna on a rainy evening.
+Neither knew that moment would change everything.
+</p>
+</div>
+</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/291738/pexels-photo-291738.jpeg">
+<div class="overlay">
+<p class="quote">
+"Every love story is beautiful,
+but ours is my favorite."
+</p>
+</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg">
+<div class="overlay">
+<div class="card">
+<h2>Memories</h2>
+<p>
+Late night calls,
+long walks,
+shared dreams,
+and endless laughter.
+</p>
+</div>
+</div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg">
+<div class="overlay">
+<h2>Together Forever</h2>
+<p>
+Distance, time and challenges
+could never separate two hearts
+that truly belonged together.
+</p>
+</div>
+</section>
+
+<!-- PAGE 6 -->
+<section class="page">
+<img src="https://images.pexels.com/photos/2055389/pexels-photo-2055389.jpeg">
+<div class="overlay">
+<p class="quote">
+"You are my today and all of my tomorrows."
+</p>
+</div>
+</section>
+
+<!-- MUSIC -->
+<audio controls autoplay loop>
+<source src="YOUR-ROMANTIC-SONG.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
